@@ -3,5 +3,5 @@ from home.views import home, authorized
 
 urlpatterns = [
     path('home/', home),
-    path('auhtorized/', authorized)
+    path('authorized/', authorized)
 ]

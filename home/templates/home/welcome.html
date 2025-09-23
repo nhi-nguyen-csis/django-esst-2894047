@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <header>SmartNotes!</header>
     <main>
-        <h1>Welcome {{name}} to Smartnotes!</h1>
+        <h1>Welcome to Smartnotes!</h1>
+        <p>Today is {{today}}</p>
+        <a href="{% url 'notes.list'%}" class="btn btn-primary">Check out this smart notes!</a>
     </main>
-</body>
-</html>
+{% endblock content %}
